@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pokemontcg_react/static/css/main.6e154075.css",
+    "main.css": "/pokemontcg_react/static/css/main.dca49227.css",
     "main.js": "/pokemontcg_react/static/js/main.2218e6dd.js",
     "index.html": "/pokemontcg_react/index.html",
-    "main.6e154075.css.map": "/pokemontcg_react/static/css/main.6e154075.css.map",
+    "main.dca49227.css.map": "/pokemontcg_react/static/css/main.dca49227.css.map",
     "main.2218e6dd.js.map": "/pokemontcg_react/static/js/main.2218e6dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e154075.css",
+    "static/css/main.dca49227.css",
     "static/js/main.2218e6dd.js"
   ]
 }
