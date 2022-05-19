@@ -56,6 +56,6 @@
 
 @media screen and (max-width:576px) {
   .pokemon_list {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
