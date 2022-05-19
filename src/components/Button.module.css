@@ -1,0 +1,25 @@
+.btn {
+  margin: 0 10px;
+  padding: 0.5em 1em;
+  background: rgb(250, 213, 3);
+  color: var(--blue-gray);
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  text-decoration-line: underline;
+  background: rgb(219, 175, 55);
+}
+
+.btn:active {
+  text-decoration-line:overline;
+  background: rgb(250, 213, 3);
+}
+
+.page {
+  margin: 0 10px;
+}

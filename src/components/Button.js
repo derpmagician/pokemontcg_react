@@ -1,6 +1,10 @@
+import classes from './Button.module.css'
+
 const Button = (props) => {
   return (
-    <button onClick={props.onHandlePage}>{props.name}</button>
+    <button className={classes.btn} onClick={props.onHandlePage}>
+      {props.name}
+    </button>
   )
 }
 

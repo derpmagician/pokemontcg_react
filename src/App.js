@@ -9,7 +9,7 @@ function App() {
   const [pageSize, setpageSize] = useState(25);
   const [query, setQuery] = useState('')
   const apiRoot = "https://api.pokemontcg.io/v2/cards/"
-  const url = `${apiRoot}?pageSize=${pageSize}&page=${page}&q=${query}`
+  const url = `${apiRoot}?pageSize=${pageSize}&page=${page}&q=${query}&orderBy=number`
   const [cards, setCards] = useState();
   const REACT_APP_XAUTHTOKEN = process.env.REACT_APP_XAUTHTOKEN
 
@@ -64,8 +64,7 @@ function App() {
 
     <div className="App">
       <nav>
-        <h1>Pokemon TCG</h1>
-
+        <h1 className="title">Pokemon TCG</h1>
       </nav>
       <OptionsBar
         handlePrevPage={handlePrevPage}
@@ -79,20 +78,6 @@ function App() {
       <CardList
         cards={cards}
       />
-      {/* <main >
-        <ul className="pokemon_list">
-          { !cards ? "Cargando" : cards.map((card, index) => {
-            return (
-              <li key={card.id} >
-                <div className="name">{card.name}</div>
-                <div className="image">
-                  <img alt={card.name} src={card.images.small}></img>
-                </div>
-              </li>
-            )
-          })}
-        </ul>
-      </main> */}
 
     </div>
   );
