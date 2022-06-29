@@ -1,8 +1,12 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <div className="welcome">
+      <p className="welcome__text">
+        This is a Fan Project to start please <NavLink to='/' className="welcome__link">Click Here</NavLink>
+      </p>
+    </div>
   )
 }
 

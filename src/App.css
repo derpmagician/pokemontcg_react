@@ -22,6 +22,31 @@ body {
   color: azure;
 }
 
+.welcome {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Asap', sans-serif;
+}
+
+.welcome .welcome__text {
+  text-align: center;
+  width: 360px;
+  font-size: 3rem;
+  font-weight: 300;
+  display: grid;
+  
+}
+
+.welcome .welcome__link {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: var(--gold-bright);
+  color: var(--blue-gray);
+  
+}
+
 .title {
   margin-left: 40px;
   color: var(--gold-bright);
