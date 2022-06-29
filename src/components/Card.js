@@ -5,7 +5,10 @@ const Card = (props) => {
   const card = props.card
 
   return (
-    <div>{card.name}</div>
+    <div>
+      {card.name}
+      <img src={card.images.large} alt={card.name} width="500" height="600"></img>
+    </div>
   )
 }
 

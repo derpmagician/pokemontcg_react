@@ -35,7 +35,6 @@ body {
   font-size: 3rem;
   font-weight: 300;
   display: grid;
-  
 }
 
 .welcome .welcome__link {
@@ -44,7 +43,15 @@ body {
   border-radius: 10px;
   background: var(--gold-bright);
   color: var(--blue-gray);
-  
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.welcome .welcome__link:hover {
+  background: var(--blue-gray);
+  color: var(--gold-bright);
+  outline: 1px solid var(--gold-bright);
+  transition: 0.5s all ease;
 }
 
 .title {
