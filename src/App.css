@@ -27,3 +27,7 @@ body {
   color: var(--gold-bright);
 }
 
+Nav a {
+  text-decoration: none;
+}
+
