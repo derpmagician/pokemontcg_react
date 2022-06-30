@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import Card from '../components/Card'
+import Pokemon from '../components/Pokemon'
+import Energy from '../components/Energy'
+import Trainer from '../components/Trainer'
 
 const CardPage = () => {
   const params = useParams();
@@ -9,7 +11,7 @@ const CardPage = () => {
   const REACT_APP_XAUTHTOKEN = process.env.REACT_APP_XAUTHTOKEN
   
   const url = `${apiRoot}/${params.id}`
-  console.log(params.id);
+  // console.log(params.id);
 
   const fetchApi = async () => {
     const response = await fetch(url, {
@@ -29,6 +31,7 @@ const CardPage = () => {
     } else {
       console.log('ERROR')
     }
+    // console.log(card.supertype)
   }
 
   useEffect(() => {
@@ -36,10 +39,14 @@ const CardPage = () => {
 
   }, []);
 
+  
   return (
     <div>
       {
-        !card ? "Cargando" : <Card card={card} />
+        !card ? "Cargando" : (
+          card.supertype==='Pokémon' ? <Pokemon card={card} /> :
+          card.supertype==='Energy' ? <Energy card={card} /> : <Trainer card={card} />
+        )
       }
     </div>
   )
