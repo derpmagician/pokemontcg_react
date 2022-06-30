@@ -63,3 +63,60 @@ Nav a {
   text-decoration: none;
 }
 
+.card__container {
+  display: grid;
+  font-size: 1.5em;
+}
+
+.commondesc__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.imglg__container {
+  padding: 10px;
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+}
+
+.imglg__img {
+  width: 100%;
+}
+
+.commondesc__name {
+  font-weight: bold;
+  display: grid;
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  place-items: center;
+}
+
+.commondesc__supertype {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  display: grid;
+  place-items: center;
+}
+
+.commondesc__rarity {
+  grid-column: 6 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  place-items: center;
+}
+
+.commondesc__subtypes {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  display: grid;
+  place-items: center;
+}
+
+.commondesc__artist {
+  grid-column: 5 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  place-items: center;
+}

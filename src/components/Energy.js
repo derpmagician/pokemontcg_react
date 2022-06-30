@@ -1,8 +1,18 @@
-import React from 'react'
+import Card from './Card';
 
-const Energy = () => {
+const Energy = (props) => {
+  const card = props.card;
   return (
-    <div>Energy</div>
+    <div>
+      <Card
+        src={card.images.large}
+        name={card.name}
+        rarity={card.rarity}
+        subtypes={card.subtypes}
+        artist={card.artist}
+        supertype={card.supertype }
+      />
+    </div>
   )
 }
 

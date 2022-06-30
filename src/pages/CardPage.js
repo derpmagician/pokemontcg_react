@@ -41,7 +41,7 @@ const CardPage = () => {
 
   
   return (
-    <div>
+    <div className='card__container'>
       {
         !card ? "Cargando" : (
           card.supertype==='Pokémon' ? <Pokemon card={card} /> :
